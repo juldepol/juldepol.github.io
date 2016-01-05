@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <style>
+    body {
+      background-color: #bcdbdb;
+    }
+
+    #box {
+      background-color: white;
+      width: 1100px;
+      height: 700px;
+      padding: 10px;
+      margin: 60px auto;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #map {
+      width: 1100px;
+      height: 700px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div id="map"></div>
+  </div>
+</body>
+<!-- Google Maps JS API -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!-- GMaps Library -->
+<script src="gmaps.js"></script>
+<script>
+  /* Lviv */
+  var mapObj = new GMaps({
+    el: '#map',
+    lat: 49.83826,
+    lng: 24.02324,
+    zoom: 13
+  });
+
+  var hostel = mapObj.addMarker({
+    lat: 49.8406118,
+    lng: 24.0289943,
+    title: 'Old City Hostel',
+    infoWindow: {
+      content: '<h4>Old City Hostel</h4><div>Беринди, 3</div>',
+      maxWidth: 150
+    }
+  });
+  var art1 = mapObj.addMarker({
+    lat: 49.851074,
+    lng: 24.0588619,
+    title: 'Сова',
+    infoWindow: {
+      content: '<h4>Сова</h4><div>Старознесенська, 70</div>',
+      maxWidth: 150
+    }
+  });
+  var art2 = mapObj.addMarker({
+    lat: 49.8526981,
+    lng: 24.0351336,
+    title: 'Дитячий майданчик',
+    infoWindow: {
+      content: '<h4>Дитячий майданчик</h4><div>Богдана Хмельницького, 62</div>',
+      maxWidth: 150
+    }
+  });
+  var art3 = mapObj.addMarker({
+    lat: 49.8482122,
+    lng: 24.0256626,
+    title: 'Абстрактна картина',
+    infoWindow: {
+      content: '<h4>Абстрактна картина</h4><div>В’ячеслава Чорновола, 29</div>',
+      maxWidth: 150
+    }
+  });
+  var art4 = mapObj.addMarker({
+    lat: 49.8543958,
+    lng: 24.0330591,
+    title: 'Символ вільної в думках людини',
+    infoWindow: {
+      content: '<h4>Символ вільної в думках людини</h4><div>Заводська, 39</div>',
+      maxWidth: 150
+    }
+  });
+  var art5 = mapObj.addMarker({
+    lat: 49.8468198,
+    lng: 24.0273288,
+    title: 'Символ руху',
+    infoWindow: {
+      content: '<h4>Символ руху</h4><div>Мулярська, 3 та Весела, 6</div>',
+      maxWidth: 150
+    }
+  });
+  var art6 = mapObj.addMarker({
+    lat: 49.800494,
+    lng: 24.0444473,
+    title: 'Райдуга та діти',
+    infoWindow: {
+      content: '<h4>Райдуга та діти</h4><div>Чукаріна, 22</div>',
+      maxWidth: 150
+    }
+  });
+  var art7 = mapObj.addMarker({
+    lat: 49.8528081,
+    lng: 24.0278577,
+    title: 'Львівська вулична галерея',
+    infoWindow: {
+      content: '<h4>Львівська вулична галерея</h4><div>Замарстинівська, 29</div>',
+      maxWidth: 150
+    }
+  });
+  var art8 = mapObj.addMarker({
+    lat: 49.8204938,
+    lng: 24.0184006,
+    title: 'Дом-кроссворд',
+    infoWindow: {
+      content: '<h4>Дом-кроссворд</h4><div>Сахарова, 82</div>',
+      maxWidth: 150
+    }
+  });
+  var art9 = mapObj.addMarker({
+    lat: 49.8415212,
+    lng: 24.0324152,
+    title: 'Галерея под открытым небом',
+    infoWindow: {
+      content: '<h4>Галерея под открытым небом</h4><div>Площадь Рынок, 13</div>',
+      maxWidth: 150
+    }
+  });
+  var cafe1 = mapObj.addMarker({
+    lat: 49.843084,
+    lng: 24.031632,
+    title: 'Гасова лямпа',
+    infoWindow: {
+      content: '<h4>Гасова лямпа</h4><div>Вірменська, 20</div>',
+      maxWidth: 150
+    }
+  });
+  var cafe2 = mapObj.addMarker({
+    lat: 49.841720,
+    lng: 24.032804,
+    title: 'Львовская копальня кофе',
+    infoWindow: {
+      content: '<h4>Львовская копальня кофе</h4><div>пл. Рынок 10</div>',
+      maxWidth: 150
+    }
+  });
+  var cafe3 = mapObj.addMarker({
+    lat: 49.841160,
+    lng: 24.034509,
+    title: 'Под золотой розой',
+    infoWindow: {
+      content: '<h4>Под золотой розой</h4><div>Староеврейская 35</div>',
+      maxWidth: 150
+    }
+  });
+  var cafe4 = mapObj.addMarker({
+    lat: 49.843239,
+    lng: 24.033320,
+    title: 'Кафе-клуб Дзиґа (Пiд клепсидрою)',
+    infoWindow: {
+      content: '<h4>Кафе-клуб Дзиґа (Пiд клепсидрою)</h4><div>Вірменська, 35</div>',
+      maxWidth: 150
+    }
+  });
+  var cafe5 = mapObj.addMarker({
+    lat: 49.841350,
+    lng: 24.032249,
+    title: 'Масоны (Найдорожча ресторація Галичини)',
+    infoWindow: {
+      content: '<h4>Масоны (Найдорожча ресторація Галичини)</h4><div>2 поверх,площа Ринок, 14</div>',
+      maxWidth: 150
+    }
+  });
+  var cafe6 = mapObj.addMarker({
+    lat: 49.840379,
+    lng: 24.035624,
+    title: 'Первая грилевая ресторация мяса и справедливости',
+    infoWindow: {
+      content: '<h4>Первая грилевая ресторация мяса и справедливости</h4><div>Валова, 20</div>',
+      maxWidth: 150
+    }
+  });
+  var cafe7 = mapObj.addMarker({
+    lat: 49.840976,
+    lng: 24.034518,
+    title: 'Дом легенд',
+    infoWindow: {
+      content: '<h4>Дом легенд</h4><div>Староєврейська, 48</div>',
+      maxWidth: 150
+    }
+  });
+  var yard1 = mapObj.addMarker({
+    lat: 49.845949,
+    lng: 24.030910,
+    title: 'Двор-музей СССР',
+    infoWindow: {
+      content: '<h4>Двор-музей СССР</h4><div>Князя Льва, 2</div>',
+      maxWidth: 150
+    }
+  });
+  var yard2 = mapObj.addMarker({
+    lat: 49.846195,
+    lng: 24.030659,
+    title: 'Двор потерянных игрушек',
+    infoWindow: {
+      content: '<h4>Двор потерянных игрушек</h4><div>Князя Льва, 3</div>',
+      maxWidth: 150
+    }
+  });
+  var yard3 = mapObj.addMarker({
+    lat: 49.841967,
+    lng: 24.032823,
+    title: 'Длинный проходной двор',
+    infoWindow: {
+      content: '<h4>Длинный проходной двор</h4><div>Площадь Рынок, 8</div>',
+      maxWidth: 150
+    }
+  });
+  var yard4 = mapObj.addMarker({
+    lat: 49.841510,
+    lng: 24.024779,
+    title: 'Двор Театра юного зрителя',
+    infoWindow: {
+      content: '<h4>Двор Театра юного зрителя</h4><div>Гнатюка, 11</div>',
+      maxWidth: 150
+    }
+  });
+  var museum1 = mapObj.addMarker({
+    lat: 49.836353,
+    lng: 24.049096,
+    title: 'Музей болезней человека',
+    infoWindow: {
+      content: '<h4>Музей болезней человека</h4><div>Пекарська, 69</div>',
+      maxWidth: 150
+    }
+  });
+  var museum2 = mapObj.addMarker({
+    lat: 49.832753,
+    lng: 24.024400,
+    title: 'Львовская цитадель',
+    infoWindow: {
+      content: '<h4>Львовская цитадель</h4><div>Академіка Колесси, 14</div>',
+      maxWidth: 150
+    }
+  });
+  var museum3 = mapObj.addMarker({
+    lat: 49.832753,
+    lng: 24.024400,
+    title: 'Музей сала',
+    infoWindow: {
+      content: '<h4>Музей сала</h4><div>просп. Свободи, 6/8</div>',
+      maxWidth: 150
+    }
+  });
+  var place1 = mapObj.addMarker({
+    lat: 49.830859,
+    lng: 24.004152,
+    title: 'Дворец гипсовых королей(вилла Юзефы Франц)',
+    infoWindow: {
+      content: '<h4>Дворец гипсовых королей</h4><div>Мельника 13</div>',
+      maxWidth: 150
+    }
+  });
+  var place2 = mapObj.addMarker({
+    lat: 49.832143,
+    lng: 24.017885,
+    title: 'Первое трамвайное депо',
+    infoWindow: {
+      content: '<h4>Первое трамвайное депо</h4><div>Пересечение Коперника, Гвардейской и Сахарова</div>',
+      maxWidth: 150
+    }
+  });
+  var place3 = mapObj.addMarker({
+    lat: 49.838691,
+    lng: 24.033332,
+    title: 'Заброшенный дворец',
+    infoWindow: {
+      content: '<h4>Заброшенный дворец</h4><div>Галицкая площадь, 10</div>',
+      maxWidth: 150
+    }
+  });
+  var park1 = mapObj.addMarker({
+    lat: 49.823230,
+    lng: 24.024992,
+    title: 'Стрийський парк',
+    infoWindow: {
+      content: '<h4>Стрийський парк</h4><div>Lviv, Ukraine</div>',
+      maxWidth: 150
+    }
+  });
+  var castle1 = mapObj.addMarker({
+    lat: 49.968467,
+    lng: 24.900770,
+    title: 'Олесский замок',
+    infoWindow: {
+      content: '<h4>Олесский замок</h4><div>Lviv, Ukraine</div>',
+      maxWidth: 150
+    }
+  });
+  var castle2 = mapObj.addMarker({
+    lat: 49.943074,
+    lng: 24.983334,
+    title: 'Подгорецкий замок',
+    infoWindow: {
+      content: '<h4>Подгорецкий замок</h4><div>Lviv, Ukraine</div>',
+      maxWidth: 150
+    }
+  });
+  var castle3 = mapObj.addMarker({
+    lat: 49.802051,
+    lng: 24.906408,
+    title: 'Золочевский замок',
+    infoWindow: {
+      content: '<h4>Золочевский замок</h4><div>Lviv, Ukraine</div>',
+      maxWidth: 150
+    }
+  });
+</script>
+
+</html>
