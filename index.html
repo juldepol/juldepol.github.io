@@ -34,28 +34,6 @@
     simpleSheet: true
   });
 
-  function setImg(type) {
-    switch (type) {
-      case 'hostel':
-        return 'img/hostel.png';
-      case 'art':
-        return 'img/green.png';
-      case 'cafe':
-        return 'img/pink.png';
-      case 'yard':
-        return 'img/blue.png';
-      case 'museum':
-        return 'img/blue.png';
-      case 'place':
-        return 'img/green.png';
-      case 'park':
-        return 'img/green.png';
-      case 'castle':
-        return 'img/blue.png';
-      default:
-        return 'img/blue.png';
-    }
-  }
 
   function showInfo(data, tabletop) {
     var mapObj = new GMaps({
@@ -70,7 +48,6 @@
         lat: parseFloat(data[i].lattitude),
         lng: parseFloat(data[i].longitude),
         title: data[i].title,
-        icon: setImg(data[i].type),
         infoWindow: {
           content: '<h4>' + data[i].title + '</h4>' + '<div>' + data[i].address + '</div>',
           maxWidth: 150
